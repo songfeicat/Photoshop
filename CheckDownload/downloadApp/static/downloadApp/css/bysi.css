@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0; padding:0; top:0; background-color:#eee; width:100%; height:auto; font-family:Sans-Serif; font-size:16px; color:#333;
+	-webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+	-webkit-tap-highlight-color:transparent; word-break:break-all;
+	-webkit-tap-highlight-color: rgba(0,0,0,0.5);
+}
+header,footer,nav,section{display:block;position:fixed;top:0;width:100%;}
+ul,li,p{margin:0; padding:0; list-style:none; display:block;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+nav{height:40px;background-color:#fafafa;border-bottom:1px solid #ddd;position:fixed;top:0;}
+.nav_f{float:left;height:40px;width:50px;;background:url(/static/downloadApp/image/menu.png);-moz-background-size:auto 80%;background-size:auto 80%;background-repeat:no-repeat;background-position:left center;}
+.nav_l{
+	float:right;height:40px;
+	width:40px;background:url(/static/downloadApp/image/refresh.png);
+	-moz-background-size:auto 80%;background-size:auto 80%;
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+.rotation{
+	animation:loading 1s linear infinite;
+	-webkit-animation:loading 1s linear infinite; 
+}
+@keyframes loading{
+0%{ transform:rotate(0deg)}
+50%{ transform:rotate(-180deg)}
+100%{ transform:rotate(-360deg)}
+}
+@-webkit-keyframes loading{
+0%{ -webkit-transform:rotate(0deg)}
+50%{ -webkit-transform:rotate(-180deg)}
+100%{ -webkit-transform:rotate(-360deg)}
+}
+nav ul{
+	display:block;
+	margin:0 auto;
+	width: 80%;/*写给不支持calc()的浏览器*/
+	width:-moz-calc(100% - 100px);
+	width:-webkit-calc(100% - 100px);
+	width: calc(100% - 100px);
+	text-align:center;
+}
+nav ul li{display:inline;  
+		height:40px;
+		line-height:40px;
+		padding:0 10px;
+}
+.pagebody{width:90%;margin:10px auto;margin-top:50px;}
+.load span{text-align:center;font-size:10px;display:block;float:left;margin-left:10px;}
+.load img{width:20px;height:20px;display:block;float:left;margin-left:40%;}
+.warning{font-size:10px;text-align:center;height:12px;line-height:12px;}
+.sec{padding:6px;background-color:white;margin:10px 0;-moz-box-shadow: 1px 1px 2px #888;box-shadow: 1px 1px 2px #888888;}
+.sec1 img{width:30px;height:30px;float:left}
+.info{height:30px;float:left;margin-left:10px;}
+.info p{height:15px;line-height:15px;font-size:13px;color:#666;}
+.sec2,.sec3,.sec4{margin:10px 0;}
+.sec2 p{color:#666;}
+.sec3 img{width:100%;height:auto;}
+.sec4{border-top:1px solid #edf;height:36px;margin-bottom:0;}
+.sec4 ul{width:100%;height:36px;}
+.sec4 li{width:24.7%;height:30px;line-height:30px;float:left;border-right:1px solid #edf;margin-top:6px;}
+.sec4 li:last-child{border-right:0px}
+.num{display:block;padding-left:15%;color:#ccc;}
+.num:before{content:"";  float:left;background-repeat:no-repeat; background-size:auto 40%; height:30px; width:20px; display:inline-block; background-position:center center;}
+.num1:before{background-image:url(/static/downloadApp/image/dingtop.png);}
+.num2:before{background-image:url(/static/downloadApp/image/cai.png);}
+.num3:before{background-image:url(/static/downloadApp/image/share_video.png);}
+.num4:before{background-image:url(/static/downloadApp/image/comment.png);}
+

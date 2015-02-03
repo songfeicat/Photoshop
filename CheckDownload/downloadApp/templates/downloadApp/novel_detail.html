@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,minimal-ui"/>
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta name="format-detection" content="telephone=no"/>
+<link type="text/css" rel="stylesheet" href="/static/downloadApp/css/global.css" />
+<link type="text/css" rel="stylesheet" href="/static/downloadApp/css/novel.css" />
+<script src='/static/downloadApp/js/jquery.js'></script>
+<script src='/static/downloadApp/js/novel.js'></script>
+<title></title>
+</head>
+
+<body>
+<div class='bookDetails' id='bookDetails'>
+<div class="bookmsg">
+	<div class="pic">
+		<img src='/static/downloadApp/image/novel.jpg' />
+	</div>
+  	<ul class="msg">
+  		<li class='booktitlename'>武逆<span class='read'>阅读</span></li>
+  		<li><span class='ntit'>作者：只是小虾米、奇幻</span></li>
+  		<li><span class='ntit'>状态：完结</span></li>
+  		<li><span class='ntit'>来源：www.17k.com</span></li>
+  	</ul>
+</div>
+
+<div class='bookCont'>
+	<div class='tipBox'>
+	
+		<div class='tip curRead' id='curRead'>
+			<span class='readNext' onclick='getNovelContent(0,{{finishchapter}}+1)'>读下一章</span>
+			<!--p class='notyet' style='display:none;'>
+				<span class='state'>已读</span>
+				<span class='none'>还没有开始阅读</span>
+			</p-->
+			<span class='readAt'>
+				<p>
+					<span class='state'>已读</span>
+					<span class='readAtTitle'>{{finishtitle}}</span>
+				</p>
+			</span>
+		</div>
+		
+		<div class='tip latestChap'>
+			<span class='updatetime'>2014-12-31</span>
+			<span>
+				<p><span class='state'>更新</span><span>武逆番外</span></p>
+			</span>
+		</div>
+		
+	</div>
+	
+	<div class='pre' id='pre'>
+		<p class='bookCont_tit'>简介</p>
+		<p class='bookCont_content'>四群《1305123》新开</>
+		<span class='bn'>更多</span>
+	</div>
+</div>
+<div class='conList'>
+	<div class='title'>
+		<span class='listType'>
+			逆序
+		</span>
+		<h3>目录</h3>
+	</div>
+	<ul class='list'>
+		<li class='cur'><a onclick='getNovelContent(0,1)'>第1章 风晧</a></li>
+		<li><a onclick='getNovelContent(0,2,"{{demotitle}}")'>第2章 {{demotitle}}</a></li>
+		<li><a onclick='getNovelContent(0,3,"{{demotitle}}")'>第3章 {{demotitle}}</a></li>
+		<li><a onclick='getNovelContent(0,4,"{{demotitle}}")'>第4章 {{demotitle}}</a></li>
+		<li><a onclick='getNovelContent(0,5,"{{demotitle}}")'>第5章 {{demotitle}}</a></li>
+		<li><a onclick='getNovelContent(0,6,"{{demotitle}}")'>第6章 {{demotitle}}</a></li>
+		<li><a onclick='getNovelContent(0,7,"{{demotitle}}")'>第7章 {{demotitle}}</a></li>
+		<li><a onclick='getNovelContent(0,8,"{{demotitle}}")'>第8章 {{demotitle}}</a></li>
+		<li><a onclick='getNovelContent(0,9,"{{demotitle}}")'>第9章 {{demotitle}}</a></li>
+	</ul>
+	<div class='pageNum' id='pageNum'>
+		<span class='bn prev off' onclick='getPage(0)'>上一页</span>
+		<span class='bn next' onclick='getPage()'>下一页</span>
+		<div class='sel'>
+			<span class='curTip'>1</span>/<span class='total'>306</span>
+			<select id='page' onchange='changePage()'>
+				<option value="0">第1页</option>
+				<option value="1">第2页</option>
+				<option value="2">第3页</option>
+				<option value='3'>第4页</option>
+				<option value='4'>第5页</option>
+				<option value='5'>第6页</option>
+				<option value='6'>第7页</option>
+				<option value='7'>第8页</option>
+				<option value='8'>第9页</option>
+				<option value='9'>第10页</option>
+				<option value='10'>第11页</option>
+				<option value='11'>第12页</option>
+				<option value='12'>第13页</option>
+				<option value='13'>第14页</option>
+				<option value='14'>第15页</option>
+				<option value='15'>第16页</option>
+			</select>
+		</div>
+	</div>
+</div>
+<div class='novelrecom'>
+	<h3>相关推荐</h3>
+	<ul class='booklist clearfix'>
+		<li><img src='/static/downloadApp/image/novel.jpg'></li>
+		<li><img src='/static/downloadApp/image/novel.jpg'></li>
+		<li><img src='/static/downloadApp/image/novel.jpg'></li>
+		<li><img src='/static/downloadApp/image/novel.jpg'></li>
+	</ul>
+</div>
+<div class='respons'>
+	<a>免责声明 版权信息</a>
+</div>
+</div>
+<script>
+	initBookMark(0);
+</script>
+</body>
+</html>

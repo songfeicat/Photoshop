@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,minimal-ui"/>
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	<meta name="format-detection" content="telephone=no"/>
+	<link rel="stylesheet" type="text/css" href="/static/downloadApp/css/bysi.css" />
+	<script src='/static/downloadApp/js/jquery.js'></script>
+	<script src='/static/downloadApp/js/scrollLoading.js'></script>
+	<script src='/static/downloadApp/js/bysi.js'></script>
+</head>
+<body>
+		<nav class='clearfix'>
+			<span class='nav_f'></span>
+			<span class='nav_l'></span>
+			<ul class='clearfix'>
+				<li>精华</li>
+				<li>最新</li>
+				<li>穿越</li>
+			</ul>
+		</nav>
+		
+		<div class='pagebody'>
+			<div class='warning' style="display:none">暂时没有更新.</div>
+			<div class='load clearfix' style='display:none'>
+				<img src='/static/downloadApp/image/refresh1.jpg' /> <span>正在加载，<br/>请稍后..</span>
+			</div>
+			<div class='content'>
+				{{funny_page|safe}}
+			</div>
+</body>
+</html>

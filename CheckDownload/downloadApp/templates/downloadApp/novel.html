@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,minimal-ui"/>
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta name="format-detection" content="telephone=no"/>
+<title></title>
+<link type="text/css" rel="stylesheet" href="/static/downloadApp/css/global.css" />
+<link type="text/css" rel="stylesheet" href="/static/downloadApp/css/nav.css" />
+<link type="text/css" rel="stylesheet" href="/static/downloadApp/css/novel.css" />
+<script src="/static/downloadApp/js/jquery.js"></script>
+<script src="/static/downloadApp/js/jquery.tap.js"></script>
+<script src="/static/downloadApp/js/nav.js"></script>
+<script src="/static/downloadApp/js/jquery.scrollLoading.js"></script>
+<script src="/static/downloadApp/js/banner.js"></script>
+<script>
+$(document).ready(function(){
+	if(WifiZone){
+		WifiZone.channel.pageStyle(WifiZone.channel.ChannelStyle.List);
+	}	  
+});
+</script>
+</head>
+
+<body>
+{% include "downloadApp/nav.html" %}
+<!--{% include "downloadApp/nav.html"%}-->
+</body>
+</html>

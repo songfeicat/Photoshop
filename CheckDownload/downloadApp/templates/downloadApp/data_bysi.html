@@ -1,0 +1,21 @@
+{% for record in records %}
+		<div class='sec'>
+			<div class='sec1 clearfix'>
+				<img src='/static/downloadApp/image/pic.jpg' /><div class='info'><p>姓名</p><p>2015-2-2</p></div>
+			</div>
+			<div class='sec2'>
+				<p>{{record.desc}}</p>
+			</div>
+			<div class='sec3'>
+				<img class="data-img" data-url={{record.pic.url}} src='/static/downloadApp/image/pic.jpg' />
+			</div>
+			<div class='sec4'>
+				<ul class='clearfix'>
+					<li><span class='num num1'>{{record.zan}}</span></li>
+					<li><span class='num num2'>{{record.cai}}</span></li>
+					<li><span class='num num3'>{{record.forward}}</span></li>
+					<li><span class='num num4'>{{record.comment_num}}</span></li>
+				</ul>
+			</div>
+		</div>
+{% endfor %}
