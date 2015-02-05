@@ -57,7 +57,6 @@ ROOT_URLCONF = 'CheckDownload.urls'
 
 WSGI_APPLICATION = 'CheckDownload.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 

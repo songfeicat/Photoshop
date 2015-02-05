@@ -13,5 +13,7 @@ urlpatterns = [
      url(r'^novel_content/([0-9]*)/$', views.novelContent),
      url(r'^bysi/$',views.Bysi),
      url(r'^bysiLogin/$',views.BysiLogin),
+     url(r'^csv/$',views.Csv),
+     url(r'^fetchnew/$',views.FetchNewData),
      url(r'^show_register_phone/$', wan.show_register_phone),
 ]

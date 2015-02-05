@@ -21,17 +21,17 @@
 			st = $(window).scrollTop(); sth = st + $(window).height();
 			$.each(params.data,function(i,data){
 				var o = data.obj, tag = data.tag, url = data.url;
-				var t = o.position().top, th = t + o.height();
 				if(o){
+					var t = o.position().top, th = t + o.height();
 					if((t>st&&t<sth)||(th>st&&th<sth)){
 						if(tag === "img"){
 							o.attr("src",url);
 						}else{
 							o.load(url);
 						}
+						valid = true;
+						data.obj = null;
 					}
-					valid = true;
-					data.obj = null;
 				}
 
 			});
