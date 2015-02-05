@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <style>
+
+  </style>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="validation.js"></script>
+
+    <script type="text/javascript">
+
+       $(document).ready(function() {
+         $("#test").click(function() {
+             if($(this).validateEmail()===false){}else{}
+         });
+       });
+    </script>
+  </head>
+  <body>
+    <input type = 'text' id = 'test' placeholder = 'enter the phone number' />
+  </body>
+</html>
